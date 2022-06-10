@@ -38,6 +38,20 @@ fn calculate_family_age() {
     }
 }
 
+fn print_hello() {
+    let mut count = 0;
+
+    loop {
+        println!("Hello!");
+
+        count += 1;
+
+        if count >= 5 {
+            break;
+        }
+    }
+}
+
 fn main() {
     let number = 44;
 
@@ -50,4 +64,6 @@ fn main() {
     println!("My name is {}", name);
 
     calculate_family_age();
+
+    print_hello();
 }
